@@ -5,8 +5,11 @@ from bot.click_point import click
 
 def main():
     while True:
-        time.sleep(2)
-        y, x = get_coordinates()
+        time.sleep(1)
+        try:
+            y, x = get_coordinates()
+        except:
+            continue
         click(x, y)
 
 

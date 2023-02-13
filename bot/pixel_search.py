@@ -11,7 +11,6 @@ def get_coordinates(bbox=(565, 27, 1073, 357)):
         for i in range(0, opencvImage.shape[1]):
             if opencvImage[j][i].tolist() == [0, 255, 0]:
                 coord.append([j, i])
-                print(coord[0])
                 break
         else:
             continue
