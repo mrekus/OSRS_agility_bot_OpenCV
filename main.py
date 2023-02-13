@@ -1,11 +1,12 @@
 import time
+from random import uniform
 from bot.pixel_search import get_coordinates
 from bot.click_point import click
 
 
 def main():
     while True:
-        time.sleep(1)
+        time.sleep(round(uniform(0.08, 0.12), 2))
         try:
             y, x = get_coordinates()
         except:
